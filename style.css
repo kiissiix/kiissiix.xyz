@@ -1,201 +1,73 @@
-#all {
-    width: 625px;
-    height: 545px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-#left {
-    float: left;
-    width: 385px;
-    height: 545px;
-}
-
-#right {
-    float: right;
-    width: 230px;
-    height: 545px;
-}
-
-#leftbox {
-    background-color: #ffbfce;
-    border-radius: 10px;
-    width: 365px;
-    height: 525px;
-    padding: 10px;
-}
-
-#leftcontent {
-    width: 365px;
-    height: 525px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #d48aa8;
-}
-
-#contentbox {
-    width: 345px;
-    height: 385px;
-    padding: 10px;
-}
-
-#content {
-    width: 312px;
-    height: 355px;
-    border-radius: 10px;
-    border: 2px solid #ffbfce;
-    color: #425757;
-    font-size: 14px;
-    text-align: justify;
-    padding: 15px;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-#content h1 {
-    margin: 0px;
-    border-bottom: 2px dotted #7ecca1;
-    color: #ffbfce;
-    text-align: right;
+@font-face {
+    font-family: 'Lexend Regular';
+    src: url('fonts/Lexend-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-size: 26px;
+    font-style: normal;
 }
 
-#imgbox {
-    padding: 10px;
-}
-
-#img {
-    width: 345px;
-    height: 100px;
-    border-radius: 10px;
-    /*background-image: url('https://cdn.discordapp.com/attachments/1147496540668170432/1218041707204051094/IMG_8040.jpg?ex=660638bd&is=65f3c3bd&hm=ad5493b605799c70ee220f2a7e3192b38907b8c42b581262e106a3ebb2ec20a9&');
-    /*345x100*/
-    background-size: 100%;
-}
-
-#righttop {
-    width: 198px;
-    height: 160px;
-    border: 6px solid #ffbfce;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    padding: 10px;
-}
-
-#righttopimg {
-    width: 198px;
-    height: 160px;
-    background-color: #a2d5d5;
-    border-radius: 5px;
-    background-image: url('https://i.imgur.com/yoquBAL.png');
-    /*198x160*/
-    background-size: 100% 100%;
-}
-
-#rightmiddle {
-    width: 198px;
-    height: 90px;
-    border: 6px solid #ffbfce;
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-#nav {
-    padding-top: 2px;
-}
-
-#nav a:hover {
-    color: #67947b;
-}
-
-.link1 {
-    background-color: #7ecca1;
-    padding: 1px 1px 1px 1px;
-    display: inline-block;
-    margin-bottom: 2px;
-    width: 95px;
-    text-align: center;
-    color: #fff;
-    float: left;
-}
-
-.link2 {
-    background-color: #7ecca1;
-    padding: 1px 1px 1px 1px;
-    display: inline-block;
-    margin-bottom: 2px;
-    width: 95px;
-    text-align: center;
-    color: #fff;
-    float: right;
-}
-
-#rightbottom {
-    width: 198px;
-    height: 178px;
-    border: 6px solid #ffbfce;
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 10px;
-    color: #425757;
-    font-size: 14px;
-    text-align: justify;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-#rightbottom h1 {
-    margin: 0px;
-    border-bottom: 2px dotted #7ecca1;
-    color: #ffbfce;
-    text-align: right;
-    font-weight: normal;
-    font-size: 26px;
+body {
+    background-color: #232323;
+    color: #F0F0F0;
+    font-family: 'Lexend Regular', sans-serif;
+    text-rendering: optimizeLegibility;
+    text-transform: lowercase;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
-    color: #7ecca1;
-    text-decoration: none;
+    color: #FFF;
+    text-decoration-color: #E07C93;
 }
 
 a:hover {
-    color: #a2d5d5;
+    color: #E07C93;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
+.navig {
+    padding: 10px;
+    text-align: center;
 }
 
-::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius: 10px;
+.navig a {
+    color: #FFF;
+    text-decoration-color: #E07C93;
+    padding: 5px 10px;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: #a2d5d5;
-    border-radius: 10px;
+.navig a:hover {
+    /*background-color: #E07C93;*/
+    color: #E07C93;
 }
 
-#credit {
-    font-size: 13px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+.navig .current {
+    color: #E07C93;
 }
 
-#credit a {
-    color: #e7f0f0;
+.header {
+    text-align: center;
 }
 
-#credit a:hover {
-    color: #e7f0f0;
+.header .headerTitle {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.header .headerSubtitle {
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.description {
+    /*margin-top: 20px;*/
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+.section {}
+
+li {
+    font-size: 20px;
 }
